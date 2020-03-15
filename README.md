@@ -7,6 +7,8 @@
 参考 src/app/helloworld/ 目录
 
 # 编译
+Debug 编译模式使用了-fno-omit-frame-pointer，包含stack frame pointer以便于调试<br>
+Release 编译模式使用 -O3 优化，没有了stack frame pointer以便加快运行速度<br><br>
 mkdir build <br>
 cd build<br>
 cmake .. -DCMAKE_BUILD_TYPE=Debug<br>
