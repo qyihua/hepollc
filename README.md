@@ -7,24 +7,25 @@
 参考 src/app/helloworld/ 目录
 
 # 编译
-mkdir build
-cd build
-cmake .. -DCMAKE_BUILD_TYPE=Debug
-或
-cmake .. -DCMAKE_BUILD_TYPE=Release
-make
-cd ../bin
-./hepollc
-
-即可使用浏览器打开 Hello World
-http://127.0.0.1:8088/roothello
-http://127.0.0.1:8088/hello/apphello
+mkdir build <br>
+cd build<br>
+cmake .. -DCMAKE_BUILD_TYPE=Debug<br>
+或<br>
+cmake .. -DCMAKE_BUILD_TYPE=Release<br>
+make<br>
+cd ../bin<br>
+./hepollc<br>
+<br><br>
+即可使用浏览器打开 Hello World<br>
+http://127.0.0.1:8088/roothello<br>
+http://127.0.0.1:8088/hello/apphello<br>
 
 
 # 数据库支持
-默认禁用了数据库支持，可通过编辑 src/CMakeLists.txt 去掉 #add_subdirectory(dblib) 注释开启
-目前只实现了 Oracle，Postgesql 的支持，其他数据库可参考 src/dblib
+默认禁用了数据库支持，可通过编辑 src/CMakeLists.txt 去掉 #add_subdirectory(dblib) 注释开启<br>
+目前只实现了 Oracle，Postgesql 的支持，其他数据库可参考 src/dblib<br>
 
 # 配置
-可通过命令行进行配置，例如 ./hepollc -port 8088 -process_num 4 -reuseport 1
-也可通过 bin/conf/ 目录进行配置
+可通过命令行进行配置，例如 <br>
+./hepollc -port 8088 -process_num 4 -reuseport 1<br>
+也可通过 bin/conf/ 目录进行配置<br>
